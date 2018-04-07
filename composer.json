@@ -14,13 +14,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Goodwong\\LaravelCategory\\": "src/"
+            "Goodwong\\Category\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Goodwong\\LaravelCategory\\CategoryServiceProvider"
+                "Goodwong\\Category\\CategoryServiceProvider"
             ]
         }
     }

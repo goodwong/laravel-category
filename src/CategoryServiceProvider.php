@@ -1,6 +1,6 @@
 <?php
 
-namespace Goodwong\LaravelCategory;
+namespace Goodwong\Category;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Goodwong\LaravelCategory\Entities;
+namespace Goodwong\Category\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

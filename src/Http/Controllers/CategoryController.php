@@ -1,8 +1,8 @@
 <?php
 
-namespace Goodwong\LaravelCategory\Http\Controllers;
+namespace Goodwong\Category\Http\Controllers;
 
-use Goodwong\LaravelCategory\Entities\Category;
+use Goodwong\Category\Entities\Category;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -52,7 +52,7 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Goodwong\LaravelCategory\Entities\Category  $category
+     * @param  \Goodwong\Category\Entities\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function show(Category $category)
@@ -63,7 +63,7 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \Goodwong\LaravelCategory\Entities\Category  $category
+     * @param  \Goodwong\Category\Entities\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function edit(Category $category)
@@ -74,7 +74,7 @@ class CategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Goodwong\LaravelCategory\Entities\Category  $category
+     * @param  \Goodwong\Category\Entities\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Category $category)
@@ -86,7 +86,7 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \Goodwong\LaravelCategory\Entities\Category  $category
+     * @param  \Goodwong\Category\Entities\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function destroy(Category $category)

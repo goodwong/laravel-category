@@ -1,6 +1,6 @@
 <?php
 
-namespace Goodwong\LaravelCategory;
+namespace Goodwong\Category;
 
 use Illuminate\Support\Facades\Route;
 
@@ -13,7 +13,7 @@ class Router
      */
     public static function category()
     {
-        Route::namespace('Goodwong\LaravelCategory\Http\Controllers')->group(function () {
+        Route::namespace('Goodwong\Category\Http\Controllers')->group(function () {
         	Route::resource('categories', 'CategoryController');
         });
     }
