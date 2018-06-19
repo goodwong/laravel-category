@@ -18,8 +18,11 @@ class CategoryController extends Controller
         $per_page = $request->input('per_page', 15);
 
         $query = Category::getModel();
-        if ($vocabulary = $request->input('vocabulary')) {
-            $query = $query->where('vocabulary', $vocabulary);
+        if ($request->vocabulary) {
+            $query = $query->where('vocabulary', $request->vocabulary);
+        }
+        if ($request->parent_id) {
+            $query = $query->where('parent_id', $request->parent_id);
         }
         if ($ids = $request->input('ids')) {
             $query = $query->whereIn('id', explode(',', $ids));
