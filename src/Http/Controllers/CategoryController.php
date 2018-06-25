@@ -46,8 +46,8 @@ class CategoryController extends Controller
 
         // 恢复已经删除的
         if ($exist && $exist->trashed()) {
-            $trashed->restore();
-            return $trashed;
+            $exist->restore();
+            return $exist;
         }
         if ($exist) {
             abort(409, '不能重复创建');
