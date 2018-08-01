@@ -42,6 +42,9 @@ class CategoryController extends Controller
         if ($request->vocabulary) {
             $query = $query->where('vocabulary', $request->vocabulary);
         }
+        if ($request->parent_id) {
+            $query = $query->where('parent_id', $request->parent_id);
+        }
         $exist = $query->where('name', $request->name)->first();
 
         // 恢复已经删除的
@@ -54,6 +57,7 @@ class CategoryController extends Controller
         }
         // 新建
         $category = Category::create($request->all());
+        $category = Category::find($category->id);
         return $category;
     }
 
